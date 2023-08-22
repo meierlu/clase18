@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -11,20 +13,39 @@
 </head>
 <body>
     <header class="headerMain">
-        <h1 class="tituloPrincipal">Nombre Bar</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="comida.html">Comida</a></li>
-                <li><a href="tragos.html">Tragos</a></li>
-                <li><a href="#">Fiestas</a>
-                    <ul class="menuSecundario">
-                        <li><a href="galeria.html">Galería</a></li>
-                        <li><a href="proximas_fechas.html">Próximas fechas</a></li>
+        
+        <nav class="menu navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="tituloPrincipal navbar-brand" href="#">Bar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./comida.html">Comida</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tragos.html">Tragos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Fiestas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./galeria.html">Galería</a></li>
+                      <li><a class="dropdown-item" href="./proximas_fechas.html">Próximas fechas</a></li>
                     </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+       
         </nav>
     </header>
     <main class="home">
@@ -36,6 +57,8 @@
             <img src="../img/comida4.jpg" alt="papas fritas" class="imagenComida">
         </section>
     </main>
-    <footer class="footer">Nombre Bar 2021 -  Seguinos en nuestras redes sociales  -</footer>    
+    <footer class="footer">Nombre Bar 2021 -  Seguinos en nuestras redes sociales  -</footer>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
