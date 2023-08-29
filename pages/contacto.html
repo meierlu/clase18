@@ -51,47 +51,80 @@
     <section class="contacto">
         <h2 class="tituloReservas">Reservá tu lugar</h2>
         <!-- formaulario de contacto -->
+
+      <div class="container"> 
         <form action="#" enctype="application/x-www-form-urlencoded" method="GET" class="formContacto">
-            <!-- Nombre -->
-            <label for="nombre">Nombre Completo</label></br>
-            <input type="text" name="nombre" id="nombre"></br>
-            <!-- Mail -->
-            <label for="email">Email</label></br>
-            <input type="email" name="email" id="email" placeholder="Ej: juan@hola.com"></br>
-            <!--Teléfono -->
-            <label for="telefono">Teléfono</label></br>
-            <input type="number" name="telefono" id="telefono" placeholder="Ej: 095700684"></br>
-            <!-- Tipo de evento -->
-            <p class="tipoEvento">Tipo de evento</p><br>
-            <label for="cumpleanos">Cumpleaños</label>
-            <input type="radio" name="evento" value="cumpleaños">
-            <label for="recibimiento">Recibimiento</label>
-            <input type="radio" name="evento" value="recibimiento">
-            <label for="corporativo">Corporativo</label>
-            <input type="radio" name="evento" value="corporativo"><br>
-            <br>
-            <!-- Fecha -->
-            <label for="fecha_reserva">Fecha deseada</label><br>
-            <input type="date" name="fecha_reserva" value="2021-04-19" min="2021-04-19" max="2022-12-31"><br>
-            <!-- Comentarios adicionales -->
-            <label for="comentarios">Comentarios adicionales</label><br>
-            <textarea name="comentarios" cols="30" rows="10" placeholder="Comentarios adicionales, cantidad personas."></textarea><br>
-            <!-- Método de pago -->
-            <label for="metodo_de_pago">Método de pago</label><br>
-            <select name="pago">
-                <option value="tarjeta">Tarjeta de crédito</option>
-                <option value="efectivo">Efectivo</option>
-                <option value="cheque">Cheque</option>
-            </select>
-            <br>
-            <!-- Promociones -->
-            <label for="promociones">¿Aceptas recibir promociones vía mail?</label>
-            <input type="checkbox"><br><br>
-            <!-- Enviar o resetear -->
-            <input type="submit" value="Reservar" class="reservar">
-            <input type="reset" value="Limpiar" class="limpiar"> 
-            <br>
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <!-- Mail -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej: juan@hola.com">
+          </div>
+           <!--Teléfono -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ej: 095700684">
+          </div>
+          <!-- Tipo de evento -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Tipo de evento </label>
+          <div >
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Cumpleaños
+            </label>
+          </div>
+          <div >
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Recibimiento
+            </label>
+          </div>
+          <div >
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Corporativo
+            </label>
+          </div>
+        </div>
+        <!-- Fecha -->
+        <label for="fecha_reserva">Fecha deseada</label><br>
+        <input type="date" name="fecha_reserva" value="2021-04-19" min="2021-04-19" max="2022-12-31"><br>
+        <!-- Comentarios adicionales -->
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios adicionales</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"  cols="30" rows="10" placeholder="Comentarios adicionales, cantidad personas."></textarea>
+          </div>
+        <!-- Método de pago -->
+        <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label">Método de pago</label>
+          <select class="form-select" aria-label="Default select example">
+            
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="cheque">Cheque</option>
+          </select>
+        </div>
+       <!-- Promociones -->
+        <div >
+          <label class="form-check-label" for="flexCheckChecked">
+            ¿Aceptas recibir promociones vía mail?
+          </label>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        </div>
+        <!-- Enviar o resetear -->
+        <button type="submit" class="reservar">Reservar</button>
+        <button type="reset" class="limpiar">Limpiar</button>
+
+
         </form>
+      </div>
+
+    </div>
         <!-- fin formulario de contacto -->
     </section>
     <footer class="footer">Nombre Bar 2021 -  Seguinos en nuestras redes sociales  -</footer>

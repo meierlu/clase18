@@ -100,9 +100,10 @@
 
 .home {
     background-color: #F0E5AD;
-    
-    
-    
+    background-image: url(../img/pool.jpg);
+    background-position: center center ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .promociones {
@@ -125,7 +126,7 @@
 .tituloSecundario {
     font-size:40px;
     font-family: 'Open Sans Condensed', sans-serif;
-    color:#C4AA25;
+    color:#f7d00f;
     margin-left: 20px;
     padding-bottom: 20px;
 }
@@ -163,21 +164,14 @@ td ol {
     margin-left: 20px;
 }
 
-/*imagen presentación */
-.imagenHome {
-    border:#C4AA25 2px solid;
-    border-radius: 3px;
-    max-width: 40%;
-    
-    
-}
+
 
 /* párrafo presentación*/
 .contenidoMain {
     font-size:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size:16px; 
     width:50%;
-    color: #2F2F2F;
+    color: #C4AA25;
     font-weight: bold;
     margin-left: 20px;
     margin-top:20px;
